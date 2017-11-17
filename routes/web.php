@@ -22,5 +22,6 @@ Route::get('/', function () {
 Route::get('/TambahMahasiswa','MahasiswaController@create');
 Route::get('/StoreTambahMahasiswa','MahasiswaController@store');
 
+Route::get('/HapusMahasiswa/{id}','MahasiswaController@Hapus');
 
 Route::get('/ListMahasiswa','MahasiswaController@list');

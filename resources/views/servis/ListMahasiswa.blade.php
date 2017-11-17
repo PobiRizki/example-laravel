@@ -28,6 +28,7 @@
           <th>Nama</th>
           <th>NIM</th>
           <th>jurusan</th>
+					<th>Action</th>
       </tr>
   </thead>
 	<?php $i=1; foreach ($mahasiswa as $user): ?>
@@ -37,6 +38,10 @@
 					<td>{{$user->nama}}</td>
 					<td>{{$user->nim}}</td>
 					<td>{{$user->jurusan}}</td>
+					<th>
+								<a class="btn btn-outline-primary" href="" role="button">Edit</a>
+								<a class="btn btn-outline-danger" href="HapusMahasiswa/{{$user->id}}" role="button">Hapus</a>
+							</th>
 			</tr>
   </tbody>
 		<?php endforeach; ?>

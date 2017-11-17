@@ -55,8 +55,21 @@ class MahasiswaController extends Controller
       //dd($mahasiswa);
       //$mahasiswa = user::all();
       // return $request->nama;
+      return redirect('ListMahasiswa');
 
-      return redirect(' ListMahasiswa');
+    }
 
+    public function hapus ($id){
+
+      //return $id;
+
+      $mahasiswa = user::find($id);
+      $mahasiswa->delete();
+        return redirect('ListMahasiswa');
+      //dd($mahasiswa);
+
+    }
+    public function edit($edit){
+        $mahasiswa = user::where('id','1')->first();
     }
 }
