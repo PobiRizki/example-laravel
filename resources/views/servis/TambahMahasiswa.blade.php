@@ -26,25 +26,21 @@
 			<form action="/StoreTambahMahasiswa" method="get">
 				<div class="form-group">
 					<label for="inputEmail">Nama</label> <input type="text"
-						class="form-control" name="nama" placeholder="Nama">
+						class="form-control" name="nama" placeholder="Nama" required>
 				</div>
 				<div class="form-group">
 					<label for="inputPassword">NIM</label> <input type="text"
-						class="form-control" name="nim" placeholder="NIM">
+						class="form-control" name="nim" placeholder="NIM" required>
 				</div>
 				<div class="form-group">
 					<label for="inputPassword">Jurusan</label> <input type="text"
-						class="form-control" name="jurusan" placeholder="Jurusan">
+						class="form-control" name="jurusan" placeholder="Jurusan" required>
 				</div>
 				<button  class="btn btn-outline-primary btn-lg btn-block" role="button">Tambah
 					Mahasiswa</button>
 			</form>
-
-
-
-
 			<hr>
-			<a class="btn btn-outline-secondary btn-lg btn-block" href="index.html" role="button">Back To Home</a>
+			<a class="btn btn-outline-secondary btn-lg btn-block" href="/" role="button">Back To Home</a>
 			<hr>
 		</div>
 		</div>

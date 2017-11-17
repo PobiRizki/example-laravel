@@ -37,24 +37,26 @@ class MahasiswaController extends Controller
       //  return view('servis/TambahMahasiswa');
       //return 'masuk';
 
-      // $mhs = new user;
-      // $mhs->nama = $request->nama;
-      // $mhs->nim = $request->nim;
-      // $mhs->jurusan = $request->jurusan;
-      // $mhs->save();
+      //tambah data eloquent
+      $mahasiswa = new user;
+      $mahasiswa->nama = $request->nama;
+      $mahasiswa->nim = $request->nim;
+      $mahasiswa->jurusan = $request->jurusan;
+      $mahasiswa->save();
 
       //tambah data eloquent
-      user::create([
-        'nama' =>  $request->nama,
-        'nim' => $request->nim,
-        'jurusan' =>$request->jurusan
-      ]);
+      // user::create([
+      //   'nama' =>  $request->nama,
+      //   'nim' => $request->nim,
+      //   'jurusan' =>$request->jurusan
+      // ]);
 
-      //$mahasiswa = mahasiswa::all();
+      $mahasiswa = user::all();
       //dd($mahasiswa);
+      //$mahasiswa = user::all();
+      // return $request->nama;
 
-    // return $request->nama;
-      return view('servis/ListMahasiswa');
+      return redirect(' ListMahasiswa');
 
     }
 }
