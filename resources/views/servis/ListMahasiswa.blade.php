@@ -39,7 +39,7 @@
 					<td>{{$user->nim}}</td>
 					<td>{{$user->jurusan}}</td>
 					<th>
-								<a class="btn btn-outline-primary" href="" role="button">Edit</a>
+								<a class="btn btn-outline-primary" href="EditMahasiswa/{{$user->id}}/edit" role="button">Edit</a>
 								<a class="btn btn-outline-danger" href="HapusMahasiswa/{{$user->id}}" role="button">Hapus</a>
 							</th>
 			</tr>

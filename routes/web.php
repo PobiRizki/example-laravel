@@ -25,3 +25,6 @@ Route::get('/StoreTambahMahasiswa','MahasiswaController@store');
 Route::get('/HapusMahasiswa/{id}','MahasiswaController@Hapus');
 
 Route::get('/ListMahasiswa','MahasiswaController@list');
+
+Route::get('/EditMahasiswa/{id}/edit','MahasiswaController@edit');
+Route::put('/EditMahasiswa/{id}','MahasiswaController@update');

@@ -69,7 +69,23 @@ class MahasiswaController extends Controller
       //dd($mahasiswa);
 
     }
-    public function edit($edit){
-        $mahasiswa = user::where('id','1')->first();
+    public function edit($id){
+        $mahasiswa = user::where('id',$id)->first();
+        //dd($mahasiswa);
+          return view('servis/EditMahasiswa',['mahasiswa'=>$mahasiswa]);
+    }
+
+    public function update(Request $request,$id){
+
+
+      //dd($request);
+
+      $mahasiswa = user::find($id);
+      $mahasiswa->nama = $request->nama;
+      $mahasiswa->nim = $request->nim;
+      $mahasiswa->jurusan = $request->jurusan;
+      $mahasiswa->save();
+
+      return redirect('ListMahasiswa');
     }
 }
