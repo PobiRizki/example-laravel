@@ -57,6 +57,13 @@
   							<td><a href="\ListMahasiswa">List Mahasiswa</a></td>
   						</tr>
   					</tbody>
+            <tbody>
+  						<tr>
+  							<td>4</td>
+  							<td>Hapus Mahasiswa</td>
+  							<td><a href="\ListMahasiswa">Hapus Mahasiswa</a></td>
+  						</tr>
+  					</tbody>
   					<!-- <tbody>
   						<tr>
   							<td>4</td>
